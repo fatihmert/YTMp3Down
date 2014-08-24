@@ -102,7 +102,7 @@ print get_stat(ornek_link)
 #playlist-video clearfix  spf-link
 playlist_test = "http://www.youtube.com/watch?v=3x2ABSAMVno&list=RD3x2ABSAMVno"
 
-def get_playlist(link):
+def get_playlist(playlist_test):
     playlist = []
     if get_stat(playlist_test) == 20:
         rq = requests.get(playlist_test)
