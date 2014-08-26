@@ -95,10 +95,6 @@ def is_dir(dirAdi):
     else:
         return False
 
-
-print get_isim(ornek_link)
-print get_id(ornek_link)
-print get_stat(ornek_link)
 #playlist-video clearfix  spf-link
 playlist_test = "http://www.youtube.com/watch?v=3x2ABSAMVno&list=RD3x2ABSAMVno"
 
@@ -129,8 +125,6 @@ with open("index.pytmp3") as pytmp3:
                     download_mp3(satir,cur_path)
                 elif get_stat(satir) == 20:
                     for link in get_playlist(satir):
-                        download_mp3(satir,cur_path)
+                        download_mp3(list,cur_path)
                 else:
-                    print "BİLİNMEDİK LINK"
-
-
+                    print "BİLİNMEDİK LINK
